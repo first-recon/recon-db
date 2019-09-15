@@ -32,3 +32,5 @@ create table if not exists MATCHES.matches (
     data VARCHAR(8192) not null,
     number INT not null
 );
+
+alter table MATCHES.matches add column if not exists game VARCHAR(16);
